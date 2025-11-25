@@ -1,0 +1,1 @@
+<?php require_once '../../app/controllers/AuthController.php'; Auth::register($_POST['name'],$_POST['email'],$_POST['pass']); header('Location: login.php'); ?>

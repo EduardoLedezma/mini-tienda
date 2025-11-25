@@ -1,0 +1,211 @@
+/* --------------------------
+    ESTILO MINIMALISTA PRO
+-------------------------- */
+
+:root {
+    --bg: #f5f6fa;
+    --text: #111;
+    --card: #fff;
+    --accent: #007bff;
+    --shadow: 0 4px 14px rgba(0,0,0,0.1);
+    --radius: 14px;
+    --transition: .3s ease;
+    --nav: #ffffffaa;
+}
+
+/* DARK MODE */
+.dark {
+    --bg: #111;
+    --text: #f8f8f8;
+    --card: #1b1b1b;
+    --accent: #4da3ff;
+    --nav: #1f1f1faa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    transition: var(--transition);
+}
+
+/* NAVBAR */
+.navbar {
+    backdrop-filter: blur(10px);
+    background: var(--nav);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow);
+    margin-bottom: 25px;
+}
+
+.nav-brand {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.nav-brand:hover { opacity: 0.7; }
+
+.nav-right a, .nav-right span {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--text);
+    font-size: 16px;
+}
+
+#darkToggle {
+    margin-left: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* CONTENIDO */
+.content {
+    max-width: 1100px;
+    margin: auto;
+    padding: 10px;
+}
+
+/* GRID */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+.item {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 20px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.item img {
+    width: 100%;
+    border-radius: var(--radius);
+    margin-bottom: 15px;
+}
+
+.item h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.item p {
+    color: var(--text);
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.item a, button {
+    padding: 10px 17px;
+    border-radius: var(--radius);
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.item a:hover, button:hover {
+    opacity: 0.8;
+}
+
+/* PRODUCTO INDIVIDUAL */
+.product-box {
+    background: var(--card);
+    padding: 25px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.product-box img {
+    width: 100%;
+    border-radius: var(--radius);
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    color: var(--text);
+    opacity: 0.7;
+}
+
+/* ADMIN PANEL */
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+.admin-table th, .admin-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.admin-img {
+    width: 60px;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--accent);
+    padding: 10px 18px;
+    color: #fff;
+    border-radius: var(--radius);
+    text-decoration: none;
+}
+
+.btn-edit {
+    background: #4CAF50;
+    padding: 7px 12px;
+    color: #fff;
+    border-radius: var(--radius);
+}
+
+.btn-delete {
+    background: #e63946;
+    padding: 7px 12px;
+    color: #fff;
+    border-radius: var(--radius);
+}
+
+.form-box {
+    background: var(--card);
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

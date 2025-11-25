@@ -1,0 +1,1 @@
+<!DOCTYPE html><html><body><h1>Registro</h1><form method='post' action='register_post.php'><input name='name'><input name='email'><input name='pass' type='password'><button>Registrar</button></form></body></html>

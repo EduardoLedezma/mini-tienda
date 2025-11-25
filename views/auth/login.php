@@ -1,0 +1,1 @@
+<!DOCTYPE html><html><body><h1>Login</h1><form method='post' action='login_post.php'><input name='email'><input name='pass' type='password'><button>Entrar</button></form></body></html>
