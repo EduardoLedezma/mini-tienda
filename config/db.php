@@ -5,7 +5,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // Configuración de base de datos para Heroku
-$database_url = getenv('DATABASE_URL') ?: getenv('CLEARDB_DATABASE_URL');
+$database_url = getenv('DATABASE_URL') ?: getenv('CLEARDB_DATABASE_URL') ?: getenv('JAWSDB_URL');
 
 if ($database_url) {
     // Parse la URL de la base de datos de Heroku
